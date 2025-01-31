@@ -70,7 +70,7 @@ form textarea {
 }
 
 form button {
-  background: #222;
+  background: #6b6b6b;
   color: #fff;
   border: 2px solid #f4f4f4;
   padding: 1rem;
@@ -88,8 +88,8 @@ form button:focus {
 }
 
 .site-footer {
-  background-color: #f4f4f4;
-  color: #222;
+  background-color: #000;
+  color: #f4f4f4;
   padding: 2rem 0;
   text-align: center;
 }
