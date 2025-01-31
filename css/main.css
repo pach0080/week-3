@@ -50,6 +50,7 @@ img {
 .main-nav ul li a:focus {
   background-color: #000;
   color: #f4f4f4; 
+  font-weight: bold;
 }
 
 form input,
@@ -79,9 +80,11 @@ form button {
 
 form button:hover,
 form button:focus {
-  background: #555;
+  background: #f4f4f4;
   border-style: solid;
   border-color: red; 
+  color: #ff0000;
+  font-weight: bold;
 }
 
 .site-footer {
@@ -115,5 +118,20 @@ form button:focus {
 
 .owner a:hover,
 .owner a:focus {
-  text-decoration-color: #ff9900;
+  text-decoration-color: #ff0000;
+  font-weight: bold;
+}
+
+.address a {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #ffcc00;
+  text-underline-offset: 3px;
+  font-weight: normal;
+}
+
+.address a:hover,
+.address a:focus {
+  text-decoration-color: #ff0000;
+  font-weight: bold;
 }
