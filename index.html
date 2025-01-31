@@ -8,7 +8,7 @@
   <title>pach0080 - Accessible Me</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&family=Stick+No+Bills:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Stick+No+Bills:wght@400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -16,8 +16,8 @@
   <a href="#main-content" class="skip-link">Skip to main content</a>
   <div class="container">
     <header class="site-header" role="banner">
-      <h1>Jam Box Studios</h1>
-      <nav class="main-nav" role="navigation" aria-label="Main Navigation">
+      <h1 id="site-title">Jam Box Studios</h1>
+      <nav class="main-nav" role="navigation" aria-labelledby="site-title">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
@@ -25,45 +25,55 @@
           <li><a href="#">Studio</a></li>
         </ul>
       </nav>
-      <img src="https://picsum.photos/1200/900" class="banner" alt="Jam Box Studios Banner">
+      <img src="https://picsum.photos/1200/900" class="banner" alt="Jam Box Studios Banner showcasing music equipment">
     </header>
+    
     <main id="main-content" role="main">
-      <h1>Welcome to Jam Box</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
+      <h2>Welcome to Jam Box</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet.</p>
+      
       <section class="owner" itemscope itemtype="http://schema.org/Person">
-        <h1>Meet the owner</h1>
+        <h2>Meet the Owner</h2>
         <ul>
-          <li itemprop="name">Name: John Doe</li>
-          <li itemprop="jobTitle">Title: CEO</li>
-          <li itemprop="email">Email: <a href="mailto:johnjoe@jambox.ca">johnjoe@jambox.ca</a></li>
-          <li itemprop="telephone">Phone: <a href="tel:613-000-0000">613-000-0000</a></li>
+          <li><strong>Name:</strong> <span itemprop="name">John Doe</span></li>
+          <li><strong>Title:</strong> <span itemprop="jobTitle">CEO</span></li>
+          <li><strong>Email:</strong> <a href="mailto:johnjoe@jambox.ca" itemprop="email">johnjoe@jambox.ca</a></li>
+          <li><strong>Phone:</strong> <a href="tel:613-000-0000" itemprop="telephone">613-000-0000</a></li>
         </ul>
-        <h1>Address</h1>
-        <p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+      </section>
+      
+      <section class="address" itemscope itemtype="http://schema.org/PostalAddress">
+        <h2>Our Address</h2>
+        <p>
           <span itemprop="name">Jambox Studios</span><br>
           <span itemprop="streetAddress">123 Guitar Road</span>,<br>
           <span itemprop="addressLocality">Musicville</span>, <span itemprop="addressRegion">Danceistan</span><br>
           <span itemprop="postalCode">B3T 0L0</span>
         </p>
       </section>
-      <section class="contact-section" role="form">
-        <h1>Contact Us</h1>
-        <form action="thanks.html">
+      
+      <section class="contact-section">
+        <h2>Contact Us</h2>
+        <form action="thanks.html" role="form">
           <label for="full-name">Full Name</label>
-          <input type="text" id="full-name" placeholder="Full Name" required>
+          <input type="text" id="full-name" name="full-name" placeholder="Full Name" required>
+          
           <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Email" required>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          
           <label for="subject">Subject</label>
-          <input type="text" id="subject" placeholder="Subject" required>
+          <input type="text" id="subject" name="subject" placeholder="Subject" required>
+          
           <label for="message">Your Message</label>
-          <textarea id="message" required></textarea>
+          <textarea id="message" name="message" required></textarea>
+          
           <button type="submit">Send</button>
         </form>
       </section>
     </main>
+    
     <footer class="site-footer" role="contentinfo">
-      &copy; 2021 Jam Box Studios
+      &copy; 2025 Jam Box Studios
     </footer>
   </div>
 </body>
